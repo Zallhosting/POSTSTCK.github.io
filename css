@@ -1,11 +1,11 @@
 /* Warna dasar tema (WhatsApp, Instagram, GitHub) */
 :root {
-    --whatsapp-green: #25D366;  /* WhatsApp Green */
-    --instagram-pink: #E1306C;  /* Instagram Pink */
-    --github-black: #333;  /* GitHub Black */
-    --white: #fff;  /* White */
-    --light-gray: #f1f1f1;  /* Light Gray */
-    --dark-gray: #333;  /* Dark Gray */
+    --whatsapp-green: #25D366;   /* WhatsApp Green */
+    --instagram-pink: #E1306C;   /* Instagram Pink */
+    --github-black: #333;        /* GitHub Black */
+    --white: #fff;               /* White */
+    --light-gray: #f1f1f1;       /* Light Gray */
+    --dark-gray: #333;           /* Dark Gray */
 }
 
 /* Pengaturan Umum */
@@ -63,7 +63,7 @@ header h1 {
     background-color: #444;
 }
 
-/* Pengaturan Profil */
+/* Pengaturan Profile */
 .settings {
     display: none;
     padding: 20px;
@@ -102,7 +102,7 @@ button:hover {
     background-color: #128C7E;
 }
 
-/* Button untuk Membuat Grup */
+/* Button untuk Menuat Group */
 .create-group {
     background-color: var(--instagram-pink);
     color: var(--white);
@@ -119,13 +119,15 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .create-group:hover {
     background-color: #D5006D;
 }
 
-/* Tampilan Grup */
+/* Tampilan Group */
 .group-container {
     margin: 20px;
 }
@@ -154,29 +156,4 @@ button:hover {
     text-align: center;
     border-radius: 5px;
     display: none;
-}
-
-/* Profil Pengguna */
-.user-profile {
-    padding: 20px;
-    background-color: var(--white);
-    border: 1px solid var(--dark-gray);
-    margin-top: 20px;
-    border-radius: 8px;
-}
-
-/* Tombol Follow */
-button.follow-btn {
-    background-color: var(--instagram-pink);
-    padding: 10px;
-    border: none;
-    color: var(--white);
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    margin-top: 10px;
-}
-
-button.follow-btn:hover {
-    background-color: #D5006D;
 }
