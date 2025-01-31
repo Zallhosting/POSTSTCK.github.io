@@ -18,6 +18,7 @@
     </div>
 </header>
 
+<!-- Pengaturan Profil -->
 <div id="settings" class="settings">
     <h2>Pengaturan Profil</h2>
     <form id="profileForm">
@@ -31,13 +32,24 @@
     </form>
 </div>
 
+<!-- Sambutan Pengguna -->
 <div id="welcomeMessage" class="welcome-message">
     <p>WELCOME! Selamat datang di Poststck! Web ini membantu Anda melakukan transaksi rekber dengan aman.</p>
 </div>
 
+<!-- Grup Rekber -->
 <div class="group-container">
     <button class="create-group" onclick="createGroup()">+</button>
     <div id="groupList"></div>
+</div>
+
+<!-- Profil Pengguna -->
+<div id="userProfile" class="user-profile">
+    <h2>Profil Saya</h2>
+    <p><strong>Nama Pengguna:</strong> <span id="profileUsername">User123</span></p>
+    <p><strong>Bio:</strong> <span id="profileBio">Saya pengguna baru di Poststck.</span></p>
+    <button onclick="followUser()">Follow</button>
+    <button onclick="viewProfile()">Lihat Profil</button>
 </div>
 
 <footer>
