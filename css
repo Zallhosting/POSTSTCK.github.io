@@ -1,26 +1,133 @@
+/* Warna dasar tema (WhatsApp, Instagram, GitHub) */
+:root {
+    --whatsapp-green: #25D366;
+    --instagram-pink: #E1306C;
+    --github-black: #333;
+    --white: #fff;
+    --light-gray: #f1f1f1;
+    --dark-gray: #333;
+}
+
+/* Pengaturan Umum */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f1f1f1;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--light-gray);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--whatsapp-green);
+    color: var(--white);
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+#menu {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#menu-content {
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    top: 40px;
+    right: 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#menu-content button {
+    background-color: var(--github-black);
+    color: var(--white);
+    padding: 10px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+#menu-content button:hover {
+    background-color: #444;
+}
+
+/* Pengaturan Profil */
+.settings {
+    display: none;
+    padding: 20px;
+    background-color: var(--white);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.settings form {
+    display: flex;
+    flex-direction: column;
+}
+
+.settings label, .settings textarea {
+    margin-bottom: 10px;
+}
+
+.settings input, .settings textarea {
+    padding: 8px;
+    border: 1px solid var(--dark-gray);
+    border-radius: 5px;
 }
 
 button {
-    background-color: green;
-    color: white;
+    background-color: var(--whatsapp-green);
+    color: var(--white);
     padding: 10px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 button:hover {
-    background-color: darkgreen;
+    background-color: #128C7E;
+}
+
+.create-group {
+    background-color: var(--instagram-pink);
+    color: var(--white);
+    border: none;
+    padding: 15px;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.create-group:hover {
+    background-color: #D5006D;
+}
+
+/* Grup Rekber */
+.group-container {
+    margin: 20px;
 }
 
 .group-item {
-    background-color: white;
+    background-color: var(--white);
     padding: 10px;
-    margin: 5px;
-    border: 1px solid #ddd;
+    margin: 10px 0;
+    border: 1px solid var(--dark-gray);
+    border-radius: 8px;
 }
 
 #profilePicPreview {
@@ -28,25 +135,21 @@ button:hover {
     margin-top: 10px;
 }
 
-#menu-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    top: 40px;
-    right: 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.settings {
-    display: none;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
+/* Sambutan Pengguna */
 .welcome-message {
-    padding: 10px;
-    background-color: #ffeb3b;
+    background-color: var(--whatsapp-green);
+    color: var(--white);
+    padding: 15px;
     margin-top: 20px;
     text-align: center;
+    border-radius: 5px;
+}
+
+/* Menu Profil */
+.user-profile {
+    padding: 20px;
+    background-color: var(--white);
+    border: 1px solid var(--dark-gray);
+    margin-top: 20px;
+    border-radius: 8px;
 }
