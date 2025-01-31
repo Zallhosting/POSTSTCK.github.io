@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+.group-item {
+    background-color: white;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+}
+
+#profilePicPreview {
+    max-width: 150px;
+    margin-top: 10px;
+}
+
+#menu-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 40px;
+    right: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.settings {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-message {
+    padding: 10px;
+    background-color: #ffeb3b;
+    margin-top: 20px;
+    text-align: center;
+}
