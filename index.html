@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poststck - Rekber</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Poststck</h1>
+    <div id="menu">
+        <span class="dots" onclick="openMenu()">&#x22EE;</span>
+        <div id="menu-content" class="menu-content">
+            <button onclick="openSettings()">Pengaturan</button>
+        </div>
+    </div>
+</header>
+
+<div id="settings" class="settings">
+    <h2>Pengaturan Profil</h2>
+    <form id="profileForm">
+        <label for="username">Nama Pengguna:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="bio">Bio:</label>
+        <textarea id="bio" name="bio" required></textarea><br>
+        <label for="profilePicture">Foto Profil:</label>
+        <input type="file" id="profilePicture" accept="image/*"><br>
+        <button type="button" onclick="saveProfile()">Simpan Profil</button>
+    </form>
+</div>
+
+<div id="welcomeMessage" class="welcome-message">
+    <p>WELCOME! Selamat datang di Poststck! Web ini membantu Anda melakukan transaksi rekber dengan aman.</p>
+</div>
+
+<div class="group-container">
+    <button class="create-group" onclick="createGroup()">+</button>
+    <div id="groupList"></div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Poststck - Semua hak dilindungi</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
